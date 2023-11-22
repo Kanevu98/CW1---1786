@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddHike">
+
+    <EditText
+        android:id="@+id/HikeName_edit"
+        android:layout_width="379dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Hike Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Location_edit"
+        android:layout_width="385dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/HikeName_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Location"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/TextDate_edit"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/Location_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Date"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Length_edit"
+        android:layout_width="381dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/TextDate_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Length"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Level_edit"
+        android:layout_width="381dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/Length_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Level of Difficulty"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Description_edit"
+        android:layout_width="379dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/Level_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Description"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupParking_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Description_edit"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RadioButton
+            android:id="@+id/Yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking: Yes"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/Nobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking: No"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TextScenery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupParking_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Scenery Rating" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRating_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/TextScenery"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonR1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1s"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonR2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2s"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonR3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3s"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonR4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4s"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonR5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5s"/>
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Weather_edit"
+        android:layout_width="382dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/radioGroupRating_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Weather Condition"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonUpdateHike"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Weather_edit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:text="Update Hike" />
+</RelativeLayout>
